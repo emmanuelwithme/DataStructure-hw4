@@ -23,3 +23,37 @@ wish.txt是各考生選填志願序列(0代表終止符號)
 第二小題: 沒有錄取任何學校的考生編號 `output/unassigned_students_ids.txt`
 第三小題: 所有考生的編號, 總分與錄取學校編號 `output/all_students.txt`
 答對一題80，2題90，3題100。
+
+## 按照上次的要求程式碼要有Student類別，請使用我給的屬性及toString():
+
+    // 學生類別，屬性有: 學號(id)、國文(chinese)、英文(english)、數學(math)、總分(total)、志願序(wishList)、錄取學校編號(schoolId)
+
+    String id;
+
+    int chinese;
+
+    int english;
+
+    int math;
+
+    int total;
+
+    LinkedList<String> wishList;
+
+    String schoolId;
+
+    @Override
+    public String toString() {
+        return "學號: " + id + ", 國文: " + chinese + ", 英文: " + english + ", 數學: " + math + ", 總分: " + total + ", 志願序: " + wishList + ", 錄取學校: " + schoolId;
+    }
+
+## 這次新增School類別，請使用我給的屬性、toString()
+    // 屬性有編號(id)、學生名額(quota)、錄取學生學號(studentList)
+    String id;
+    int quota;
+    LinkedList<String> studentList;
+
+    @Override
+    public String toString() {
+        return "學校編號: " + id + ", 學生名額: " + quota + ", 學生學號: " + studentList;
+    }
